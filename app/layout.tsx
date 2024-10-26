@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Inter } from 'next/font/google'
 import Navbar from "@/components/smallComponents/Navbar";
 import { ThemeProvider } from "@/components/smallComponents/themeProvider";
 import SearchBar from "@/components/smallComponents/SearchBar";
@@ -9,16 +8,16 @@ import CryptoBanner from "@/components/smallComponents/CryptoBanner";
 
 
 
-const satoshiSans = localFont({
-  src: "./fonts/Satoshi-Variable.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const satoshiMono = localFont({
-  src: "./fonts/Satoshi-Regular.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+// const satoshiSans = localFont({
+//   src: "./fonts/Satoshi-Variable.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+// const satoshiMono = localFont({
+//   src: "./fonts/Satoshi-Regular.woff",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
 const satoshiLight = localFont({
   src: "./fonts/Satoshi-Light.woff",
   variable: "--font-geist-mono",

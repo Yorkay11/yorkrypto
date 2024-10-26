@@ -70,7 +70,7 @@ const AllOrders = () => {
                             <CardHeader>
                                 <CardTitle>Password</CardTitle>
                                 <CardDescription>
-                                    Change your password here. After saving, you'll be logged out.
+                                    Change your password here.
                                 </CardDescription>
                             </CardHeader>
                             <CardContent className="space-y-2">
@@ -101,7 +101,7 @@ const AllOrders = () => {
                         {
                             Array.from({ length: 7 }, (_, i) => {
                                 return (
-                                    <div className='flex flex-row h-5 w-full justify-between items-center px-4 '>
+                                    <div key={i} className='flex flex-row h-5 w-full justify-between items-center px-4 '>
                                         <div 
                                             className="h-6 w-6 flex rounded-full border-4"
                                             style={{ 

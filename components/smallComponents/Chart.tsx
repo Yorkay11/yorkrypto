@@ -6,6 +6,7 @@ import { subDays, subHours, subMinutes } from 'date-fns'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { BarChart, Bar, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts'
+import { BarDataProps } from '@/types/interfaces'
 
 type TimeFrame = '15min' | '1h' | '4h' | '1d'
 type Cryptocurrency = 'BTC' | 'ETH' | 'XRP' | 'LTC'
@@ -72,7 +73,7 @@ export default function TradingViewChart() {
   const chartContainerRef = useRef<HTMLDivElement>(null)
   const chartRef = useRef<ReturnType<typeof createChart> | null>(null)
   const candleSeriesRef = useRef<ISeriesApi<'Candlestick'> | null>(null)
-  const [barChartData, setBarChartData] = useState<any[]>([])
+  const [barChartData, setBarChartData] = useState<BarDataProps[]>([])
   const [visibleRange, setVisibleRange] = useState<{ start: number; end: number } | null>(null);
 
 

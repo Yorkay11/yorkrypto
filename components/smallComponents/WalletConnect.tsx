@@ -1,12 +1,12 @@
 "use client"
 
-import { ethers } from 'ethers'
+import { Eip1193Provider, ethers } from 'ethers'
 import { useEffect, useState } from 'react'
 import { Button } from '../ui/button'
 
 declare global {
   interface Window {
-    ethereum?: any
+    ethereum?: Eip1193Provider
   }
 }
 

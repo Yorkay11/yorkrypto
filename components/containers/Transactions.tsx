@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import { ethers } from 'ethers'
 import TransactionList from '../smallComponents/TransactionList'
-import Navbar from '../smallComponents/Navbar'
 
 export default function Transactions() {
   const [walletAddress, setWalletAddress] = useState<string | null>(null)

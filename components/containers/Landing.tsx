@@ -1,10 +1,3 @@
-import Link from "next/link";
-import FeaturedCard from "../smallComponents/FeaturedCard";
-import Navbar from "../smallComponents/Navbar";
-import WalletConnectButton from "../smallComponents/WalletConnect";
-import { ArrowRight, BarChart3, Shield, Zap } from "lucide-react";
-import { Button } from "../ui/button";
-import CarouselBanner from "../smallComponents/CarouselBanner";
 import TradingViewChart from "../smallComponents/Chart";
 import Change from "../smallComponents/Change";
 import LatestTransactionsTable from "../smallComponents/LatestTransactions";

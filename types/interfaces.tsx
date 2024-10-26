@@ -1,16 +1,23 @@
+import { UTCTimestamp } from "lightweight-charts";
 
-interface Window {
+export interface Window {
     ethereum?: any
 }
 
-interface Transaction {
+export interface Transaction {
     hash: string
     amount: string
     blockNumber: number
 }
 
-interface FeatureCardProps {
+export interface FeatureCardProps {
     icon: any;
     title: string;
     description: string;
+}
+
+export interface BarDataProps {
+    time: UTCTimestamp;
+    volume: number;
+    color: string;
 }

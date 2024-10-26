@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Input } from '../ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select'
 import { cryptocurrencies } from '@/assets/data'
-import { Bitcoin, Search } from 'lucide-react'
+import { Search } from 'lucide-react'
 
 
 

@@ -3,7 +3,6 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Card, CardContent } from '../ui/card'
 import { images } from '@/assets/data'
 import Image from "next/image"
-import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 
 const CarouselBanner = () => {
     return (

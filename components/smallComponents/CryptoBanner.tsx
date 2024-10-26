@@ -1,6 +1,6 @@
 import { cryptocurrencies, inflations } from '@/assets/data'
 import React from 'react'
-import { Separator } from '../ui/separator'
+// import { Separator } from '../ui/separator'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../ui/carousel'
 
 const CryptoBanner = () => {

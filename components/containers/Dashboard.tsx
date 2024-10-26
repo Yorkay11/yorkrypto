@@ -11,7 +11,7 @@ import { Input } from '../ui/input'
 import { portfolioData } from '@/assets/data'
 
 export default function Dashboard() {
-  const [walletAddress, setWalletAddress] = useState<any | null>(null)
+  const [walletAddress, setWalletAddress] = useState<string | null>(null)
   const [sendAmount, setSendAmount] = useState('')
   const [recipientAddress, setRecipientAddress] = useState('')
 

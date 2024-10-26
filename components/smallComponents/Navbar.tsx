@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import WalletConnectButton from './WalletConnect'
-import { ModeToggle } from './ThemeToggle'
+// import { ModeToggle } from './ThemeToggle'
 
 export default function Navbar() {
   return (

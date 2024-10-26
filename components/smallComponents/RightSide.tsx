@@ -22,15 +22,16 @@ const generateMockData = (count: number) => {
     });
 };
 
-const CustomTriangleBar = (props: any) => {
+const CustomTriangleBar = (props: { x?: number; y?: number; width?: number; height?: number; fill?: string; }) => {
     const { x, y, width, height, fill } = props;
-    const points = [
-        `${x},${y}`,
-        `${x + width},${y + height / 2}`,
-        `${x},${y + height}`,
-    ].join(' ');
-
-    return <polygon points={points} fill={fill} />;
+    if (x && y && width && height && fill) {
+        const points = [
+            `${x},${y}`,
+            `${x + width},${y + height / 2}`,
+            `${x},${y + height}`,
+        ].join(' ');
+        return <polygon points={points} fill={fill} />;
+    }
 };
 
 
