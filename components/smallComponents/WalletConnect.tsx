@@ -6,7 +6,7 @@ import { Button } from '../ui/button'
 
 declare global {
   interface Window {
-    ethereum?: Eip1193Provider
+    ethereum: Eip1193Provider
   }
 }
 
