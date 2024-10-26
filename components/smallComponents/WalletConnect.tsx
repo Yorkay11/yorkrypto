@@ -1,6 +1,6 @@
 "use client"
 
-import { Eip1193Provider, ethers } from 'ethers'
+import { ethers } from 'ethers'
 import { useEffect, useState } from 'react'
 import { Button } from '../ui/button'
 
