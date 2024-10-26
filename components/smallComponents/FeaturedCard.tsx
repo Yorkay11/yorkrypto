@@ -1,3 +1,4 @@
+import { FeatureCardProps } from '@/types/interfaces'
 import React, { FC } from 'react'
 
 const FeaturedCard: FC <FeatureCardProps> = ({ icon, title, description}) => {

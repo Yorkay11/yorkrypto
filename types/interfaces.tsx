@@ -1,7 +1,10 @@
+import { Eip1193Provider } from "ethers";
 import { UTCTimestamp } from "lightweight-charts";
 
-export interface Window {
-    ethereum?: any
+declare global {
+    interface Window {
+        ethereum: Eip1193Provider
+    }
 }
 
 export interface Transaction {
